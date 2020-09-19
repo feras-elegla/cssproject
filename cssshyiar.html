@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css project/csspro.css">
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        width: 100%;
+        height: 100px;
+        background: red;
+    }
+    header #logobox{
+        width: 30%;
+        height: 100%;
+        float: right;
+        background: #eee;
+        
+    }
+    header #logobox #h1header{
+        font-size: 25px;
+        color: black;
+        float: left;
+        line-height: 50px;
+        padding-left: 15px;
+    }
+    
+    header #logobox img{
+          height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        float: right;
+         padding-right: 15px;
+        object-fit: cover;
+      
+    }
+    nav{
+        text-align: center;
+        width: 70%;
+    }
+    nav ul{
+        list-style-type: none;
+        
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 100px;
+    } nav ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: #FFF;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    nav ul li:hover a{
+        background: #FFF;
+        color: black;
+    }
+    main{
+        width: 100%;
+        height: 500px;
+        background: rgba(255,55,55);
+        border-top: 3px solid #FFF;
+/*        استخدام قالب ل الشيء*/
+/*      clip-path: polygon(7% 1%, 100% 0%, 93% 100%, 0% 100%);*/
+        animation: changebackground 3s infinite linear;
+    }
+   main aside{width: 30%;
+    height: 100%;
+    background: #FFF;
+       text-align: center;
+       float: left;
+    }
+    main aside img{
+        width: 90%;
+       
+    }
+    main aside h1{
+        padding: 10px;
+        border-bottom: 2px solid red;
+    }
+    main  #myarticle{
+        float: right;
+        width: 70%;
+        height: 100%;
+        
+        position: relative;
+    }
+    main  #myarticle #box{
+        position: absolute;
+        width: 300px;
+        height: 180px;
+        background: #eee;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 10px;
+    }
+    main  #myarticle #box h1{
+        border-bottom: 2px solid red;
+        padding: 15px 0;
+    }
+    #contact-box{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid red;
+    }#contact-box a{
+        margin: 15px;
+    }
+    #contact-box a:hover img{
+        width: 80px;
+    }
+    #contact-box img{
+        width: 60px;
+        transition: 0.5s;
+       
+    }
+     .containerimg .imgbox{
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        padding-top: 20px;
+         padding-bottom: 20px;
+        
+        
+    }
+     .containerimg .imgbox .imgcard{
+          display: inline-block;
+          margin-left:2.2%;
+          width:30%;
+         height: 100%;
+        
+    }
+    .containerimg .imgbox .imgcard img{
+        width: 100%;
+         height: 100%;
+    }
+    @media (max-width:787px){
+        header{
+        width: 100%;
+        height:800px;
+        background: red;
+        overflow: hidden;
+    }
+         header #logobox{
+        width: 100%;
+        height: 50%;
+        background: #eee;
+        text-align: center;
+             
+        } 
+        header #logobox a{
+            display: inline-block;
+            width: 100%;
+        }
+    header #logobox a #h1header{
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        color: black;
+        padding: 15px;
+    }
+    header #logobox img{
+        padding: 20px;
+        height: 250px;
+        width: 50%;
+        border-radius: 50%;
+        display: block;
+        margin-right: 25%;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+        nav{
+       
+        width: 100%;
+    }
+    nav ul{
+        list-style-type: none;
+        width: 100%;
+        margin-left: -40px
+    }
+    nav ul li{
+        display:block;
+        
+        width: 100%;
+         text-align: center;
+    } 
+        nav ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: #FFF;
+        display: block;
+        transition: 0.5s;
+    }
+    nav ul li:hover {
+        background: #FFF;
+        color: black;
+    }
+         main{
+        width: 100%;
+        height: 1000px;
+        background: rgba(255,55,55);
+        border-top: 3px solid #FFF;
+/*        استخدام قالب ل الشيء*/
+/*      clip-path: polygon(7% 1%, 100% 0%, 93% 100%, 0% 100%);*/
+        animation: changebackground 3s infinite linear;
+    }
+   main aside{
+    width:100%;
+    height: 50%;
+    background: #FFF;
+       text-align: center;
+       float: left;
+    }
+    main aside img{
+        width: 90%;
+       
+    }
+    main aside h1{
+        padding: 10px;
+        border-bottom: 2px solid red;
+    }
+    main  #myarticle{
+        float: right;
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    main  #myarticle #box{
+        position: absolute;
+        width: 300px;
+        height: 180px;
+        background: #eee;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 10px;
+    }
+    main  #myarticle #box h1{
+        border-bottom: 2px solid red;
+        padding: 15px 0;
+    }
+    #contact-box{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid red;
+    }#contact-box a{
+        margin: 15px;
+    }
+    #contact-box a:hover img{
+        width: 80px;
+    }
+    #contact-box img{
+        width: 60px;
+        transition: 0.5s;
+       
+    }
+       
+      .containerimg .imgbox{
+      
+        height: 200px;
+       
+        
+        
+    }  
+    }
+/*    ************************************/
+   
+                 
+    @keyframes changebackground{
+        
+        0%{background:white}
+        25%{background:red}
+        50%{background: background: rgba(255,55,55);}
+        100%{background:black}}   
+    </style>
+</head>
+<!--
+ <div class="listbox">
+            
+        </div>
+        <div class="logo">
+            <h1>coder shiyar</h1>
+            <img src="./images%20(17).jpg" alt="">
+        </div>
+-->
+<body>
+    <header >
+       <span id="logobox">
+             <a href="#"><img src="./img/IMG_5315.JPG"></a>
+              <a href="#"> <h1 id="h1header">Coder shiyar</h1></a>
+         
+          
+        </span>
+ <nav>
+     <ul>
+                <li> <a href="#">الصفحة الرئيسيه</a></li>
+                <li> <a href="#">الفيديوهات</a> </li>
+                <li> <a href="#">قوائم التشغيل</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    
+    <main>
+        
+    <aside>
+        <img src="./img/images%20(17).jpg">
+        <h1>feras foad</h1>
+        <div id="contact-box">
+           <a href="#"><img src="img/iconfinder_1_Facebook_colored_svg_copy_5296499.png"></a>
+            <a href="#"><img src="img/iconfinder_1_Instagram_colored_svg_1_5296765.png"></a>
+
+            <a href="#"><img src="img/iconfinder_1_Youtube2_colored_svg_5296522.png"></a>
+
+            <a href="#"><img src="img/iconfinder_1_Youtube_colored_svg_5296521.png"></a>
+
+
+        </div>
+        </aside>
+         
+        <article id="myarticle">
+            <div id="box">
+                <h1>Iam feras foad</h1>
+                <p>Wellcom to our website</p>
+            </div>
+        
+        </article>
+    </main>
+    <section class="containerimg">
+        <div class="imgbox">
+            <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+            <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+            <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+            
+           
+           
+        </div>
+        <div class="imgbox">
+           <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+            <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+            <div class="imgcard"> <img src="img/IMG_5315.JPG"></div>
+        
+           
+        </div>
+    
+    </section>
+</body>
+
+</html>
